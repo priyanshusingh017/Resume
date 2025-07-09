@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Priyanshu Singh
+% Based off of: https://github.com/priyanshusingh017/Resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+% \usepackage{mathptmx}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Priyanshu Singh} \\ \vspace{1pt}
+    \small Lucknow, Uttar Pradesh, India $|$ (+91) 6307814602 $|$ \href{mailto:singhpriyanshu661930@gmail.com}{singhpriyanshu661930@gmail.com} $|$ 
+    \href{https://github.com/priyanshusingh017}{GitHub} $|$
+    \href{https://www.linkedin.com/in/priyanshu-singh-00s7}{LinkedIn} $|$
+    \href{https://priyanshusingh017.github.io/Portfolio/}{Portfolio}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\begin{tabularx}{\linewidth}{X r}
+  \textbf{Vellore Institute of Technology, Bhopal} & Bhopal, Madhya Pradesh \\
+  \hspace{0.5em}Bachelor of Technology in Computer Science and Engineering , CGPA: 8.91/10 & Oct 2022 -- Present \\[5pt]
+  
+  \textbf{Kendriya Vidyalaya, RDSO} & Lucknow, Uttar Pradesh \\
+  \hspace{0.5em}Class XII (CBSE) , Percentage: 93.2\% & Apr 2020 -- May 2021 \\[5pt]
+  
+  \textbf{Kendriya Vidyalaya, RDSO} & Lucknow, Uttar Pradesh \\
+  \hspace{0.5em}Class X (CBSE) , Percentage: 94\% & Apr 2018 -- May 2019 \\
+\end{tabularx}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, noitemsep, nolistsep]
+  \small{
+    \item{
+      \textbf{Languages:} C++ \\
+      \textbf{Web Development:} HTML, CSS, JavaScript, React \\
+      \textbf{Tools:} Git, GitHub, Excel \\
+      \textbf{Platforms:} Visual Studio Code, IntelliJ IDEA \\
+    }
+  }
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{MediSinCare Platform} $|$ \emph{Python, HTML, CSS, JavaScript}}{August 2024 – April 2025}
+  \resumeItemListStart
+    \resumeItem{Developed a secure web application using Python (backend) and HTML, CSS, JavaScript (frontend) to manage sensitive medical data, ensuring 80\% uptime and scalability for healthcare users.}
+    \resumeItem{Integrated a Logistic Regression machine learning model to provide personalized treatment recommendations, resulting in a 40\% increase in user engagement.}
+    \resumeItem{Designed analytics dashboards that provided actionable insights, improving decision-making for over 1,000 users and healthcare providers.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Heart Failure Prediction} $|$ \emph{Python, Scikit-learn}}{April 2024 – June 2024}
+  \resumeItemListStart
+    \resumeItem{Led a team of 5 members to develop machine learning models (Random Forest, Logistic Regression, SVM) using Python and Scikit-learn to predict cardiovascular risk, achieving 89.75\% accuracy.}
+    \resumeItem{Processed and analyzed 1,000+ patient records, performing data preprocessing and cleaning to enhance model reliability by 30\%.}
+    \resumeItem{Utilized feature selection techniques and cross-validation to optimize model performance, with Random Forest delivering the highest accuracy.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Complain Desk} $|$ \emph{HTML, CSS, JavaScript}}{October 2023 – Nov 2023}
+  \resumeItemListStart
+    \resumeItem{Engineered a responsive web platform using HTML5, CSS3, and JavaScript ES6+ to automate complaint management for 50+ users, reducing processing time by 30\%.}
+    \resumeItem{Enhanced user communication and support by implementing an intuitive interface and efficient workflows.}
+    \resumeItem{Reduced response times by 20\% by optimizing the complaint resolution process and improving backend functionality.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {{Cloud Computing} - \emph{IIT Kharagpur}}{}
+  \resumeProjectHeading
+    {{Industrial IoT Markets and Security} - \emph{Coursera}}{}
+  \resumeProjectHeading
+    {{Python (Basic)} - \emph{Hacker Rank }}{}
+\resumeSubHeadingListEnd
+
+
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Extracurricular Activities}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {{Executive Secretary} — \emph{The Fine Arts Club, VIT Bhopal}}{Jul 2024 – May 2025}
+    \resumeItemListStart
+      \resumeItem{Spearheaded 4+ college events (500+ attendees each), boosting participation by 25\% via targeted digital marketing (Instagram, WhatsApp campaigns).}
+      \resumeItem{Created 10+ promotional posters (Canva/Adobe Photoshop) and edited 5+ event recap videos (Adobe Premiere Pro/CapCut), driving a 40\% increase in social media engagement (likes, shares, follower growth).}
+    \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {{Core Member} — \emph{iOS Club, VIT Bhopal}}{Jul 2024 – Apr 2025}
+    \resumeItemListStart
+      \resumeItem{Served as primary video editor for 15+ technical tutorials (Swift), utilizing Adobe Voice for professional audio enhancement and Final Cut Pro for visual polishing.}
+      \resumeItem{Increased production quality standards, resulting in 40\% cumulative view growth and 25\% higher viewer retention .}
+    \resumeItemListEnd
+    
+  \resumeProjectHeading
+    {{Team Leader} — \emph{National Science Congress, IIT Kanpur}}{Nov 2017}
+    \resumeItemListStart
+      \resumeItem{Runner-up among 20+ schools after leading a 5-member team to develop "The Junk Food Epidemic" project, proving a 68\% correlation between junk food consumption.}
+
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
