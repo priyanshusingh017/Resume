@@ -14,4 +14,4 @@ Get started quickly using the [Overleaf](https://www.overleaf.com/) template.
 
 ## Preview
 
-![Resume Preview](Priyanshu_Singh_Vit_Bhopal.jpg)
+![Resume Preview](Priyanshu_Singh_Resume.jpg)
